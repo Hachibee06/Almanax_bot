@@ -25,7 +25,7 @@ async def on_ready():
 
     # 4. Heure d'envoi du message chaque jour
     #    Format 24h, "HH:MM" (par ex "08:00" pour 8h du matin)
-    schedule.every().day.at("13:33").do(send_daily_message)
+    schedule.every().day.at("15:00").do(send_daily_message)
 
     # Boucle qui vérifie les tâches planifiées
     while True:
